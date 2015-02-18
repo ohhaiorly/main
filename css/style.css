@@ -5,7 +5,7 @@ html, body{
 body{
     font-size:16px;
     font-family:"PT Sans Narrow", sans-serif;
-    background:black url("http://github.com/ohhaiorly/ohhaiorly.github.io.git/pict/bgindex.jpg") no-repeat 50% 0;
+    background:black url("pict/bgindex.jpg") no-repeat 50% 0;
 }
 .layoutCenterWrapper{
     width:940px;
