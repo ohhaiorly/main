@@ -1,0 +1,73 @@
+html, body{
+    margin:0;
+    padding:0;
+}
+.layoutCenterWrapper{
+    width:700px;
+    margin:0 auto;
+    background:green;
+}
+.header{
+    padding:25px 0;
+    background:black;
+}
+.topEntry{
+    padding-top:40px;
+}
+.indexSection{
+    padding-top:40px;
+
+}
+.indexLeftColumn{
+    float:left;
+    width:250px;
+    background:orange;
+}
+.indexRightColumn{
+    float:right;
+    width:450px;
+    height:230px;
+    background:yellow;
+    position:relative;
+}
+.indexSection:after{
+    content:"";
+    display:table;
+    clear:both;
+}
+.indexMarket{
+    background:#00ffff;
+
+}
+.indexMarketItem{
+    background:97c89a;
+    display:inline-block;
+    width:140px;
+}
+.indexPagePanel{
+    position:absolute;
+    display:inline-block;
+    left:0px;
+    bottom:0px;
+    background:#97c89a;
+    width:200px;
+    height:40px;
+}
+.indexPages{
+    padding:0;
+    margin:0;
+    list-style:none;
+}
+.indexPages li{
+    display:inline-block;
+    width:40px;
+    height:40px;
+    background:#68a56c;
+}
+.indexPages li a{
+    background:#4fa756;
+}
+.footer{
+    background:black;
+    padding:25px 0;
+}

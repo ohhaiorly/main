@@ -4,11 +4,11 @@
         <title>Barbershop Borodinski</title>
         <meta charset="utf-8">
         <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&subset=cyrillic,latin' rel='stylesheet' type='text/css'>
     </head>
     <body>
         <header class="header">
             <div class="layoutCenterWrapper">
-                <nav>
                     <ul class="topMenu">
                         <li><a href="#">Главная</a></li>
                         <li><a href="#">Информация</a></li>
@@ -17,14 +17,13 @@
                         <li><a href="#">Магазин</a></li>
                         <li><a href="#">Контакты</a></li>
                     </ul>
-                </nav>
                 <div class="accountMenu">
-                    <a class="accountMenuEnter" href="#">Вход</a>
+                    <a class="accountMenuEnter accountMenuEnterDisabled" href="#">Вход</a>
                 </div>
             </div>
         </header>
         <div class="layoutCenterWrapper">
-            <div class="logo"><a href="#"><img src="img/logo.png"></a></div>
+            <div class="logo"><img src="img/logo.png"></div>
             <ul class="features">
                 <li>
                     <div class="featuresTitle">Быстро</div>
@@ -40,6 +39,7 @@
                 </li>
             </ul>
             <div class="indexSection">
+            <div class="indexDevider"><img src="img/bg_icon_devide.png"></div>
                 <div class="indexLeftColumn">
                     <div class="indexSectionTitle">Новости</div>
                         <ul class="indexNews">
@@ -52,7 +52,7 @@
                                 <span class="date">19 сентября</span>
                             </li>
                         </ul>
-                        <a href="#" class="btn">Все новости</a>
+                        <a href="#" class="btn btnNews">Все новости</a>
                 </div>
                 <div class="indexRightColumn">
                     <div class="indexSectionTitle">Фотогалерея</div>
@@ -64,28 +64,30 @@
                         </div>
                         <div class="galleryControls">
                             <button class="btn btnPrev">Назад</button>
-                            <button class="btn btnNext">Вперед</button>
+                            <button class="btn btnNext">Все новости</button>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="indexSection">
+            <div class="indexDevider"><img src="img/bg_icon_devide.png"></div>
                 <div class="indexLeftColumn">
                     <div class="indexSectionTitle">Контактная информация</div>
                     <div class="contactsAddress">
-                        <p><strong>Barbershop "Borodisnki"</strong></p>
+                        <p><strong>Barbershop «Borodinski»</strong></p>
                         <p>Адрес: г. Москва, ул. Собаки Павлова, д. 13</p>
                         <p>Телефон: +7 (495) 666-02-666</p>
                     </div>
                     <div class="contactsWorkTime">
                         <p>Время работы: <br> пн-пт: с 10:00 до 22:00 <br> сб - вс: с 10:00 до 19:00</p>
                     </div>
-                    <a href="#" class="btn">Как проехать</a>
+                    <a href="#" class="btn btnWay">Как проехать</a>
                     <a href="#" class="btn">Обратная связь</a>
                 </div>
                 <div class="indexRightColumn">
                     <div class="indexSectionTitle">Записаться</div>
                     <form action="#" method="post" class="orderForm">
+                       <p>Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
                         <fieldset>
                             <input type="text" name="date" placeholder="Дата">
                             <input type="text" name="time" placeholder="Время">
@@ -95,7 +97,7 @@
                             <input type="text" name="phone" placeholder="Телефон">
                         </fieldset>
                         <fieldset>
-                            <input type="submit" class="btn" value="Отправить">
+                            <input type="submit" class="btn btnSend" value="Отправить">
                         </fieldset>
                     </form>
                 </div>
@@ -103,7 +105,7 @@
         </div>
         <footer class="footer">
             <div class="layoutCenterWrapper">
-                <div class="contactsAddress">
+                <div class="contactsAddress footerContacts">
                     <p><strong>Barbershop "Borodinski"</strong></p>
                     <p>Адрес: г. Москва, ул. Собаки Павлова, д. 13</p>
                     <p>Телефон: +7 (495) 666-02-666</p>
@@ -114,8 +116,11 @@
                     <a href="http://facebook.com" class="btnSocial btnSocialFb"></a>
                     <a href="http://instagram.com" class="btnSocial btnSocialInst"></a>
                 </div>
-                <div class="copyright">Дизайн сайта:<br><a class="btn" href="http://glukhanko.ru/">glukhanko.ru</a>       </div>
+                <div class="copyright">Дизайн сайта:<br><a class="btn" href="http://glukhanko.ru/">orlov-hueta.ru</a>       </div>
             </div>
         </footer>
+        <div class="loginPopup">
+            Форма логина
+        </div>
     </body>
 </html>
