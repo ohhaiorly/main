@@ -5,7 +5,7 @@ html, body{
 body{
     font-size:16px;
     font-family:"PT Sans Narrow", sans-serif;
-    background:black url("/barbershop/pict/bgindex.jpg") no-repeat 50% 0;
+    background:black url("https://github.com/ohhaiorly/ohhaiorly.github.io.git/pict/bgindex.jpg") no-repeat 50% 0;
 }
 .layoutCenterWrapper{
     width:940px;
@@ -71,7 +71,7 @@ body{
     position:absolute;
     width:16px;
     height:16px;
-    background:url("/barbershop/img/icon_sign.png") no-repeat 0 0;
+    background:url("https://github.com/ohhaiorly/ohhaiorly.github.io.git/img/icon_sign.png") no-repeat 0 0;
     left:0;
     top:28px;
 }
@@ -126,7 +126,7 @@ body{
     margin-left:-15px;
     width:30px;
     height:30px;
-    background:url("/barbershop/img/icon_item_white.png") no-repeat 0 0 ;
+    background:url("https://github.com/ohhaiorly/ohhaiorly.github.io.git/img/icon_item_white.png") no-repeat 0 0 ;
 }
 .features p{
     font-size:14px;
@@ -140,7 +140,7 @@ body{
     background:#f39c12;
     margin:34px 0;
     min-height:50px;
-    background:url("/barbershop/img/bg_main_texture.jpg") repeat;
+    background:url("https://github.com/ohhaiorly/ohhaiorly.github.io.git/img/bg_main_texture.jpg") repeat;
     height:430px;
 }
 .indexSection:after{
@@ -155,7 +155,7 @@ body{
     margin-bottom:55px;
     margin-top:55px;
     min-height:100px;
-    background:url("/barbershop/img/bg_main_texture.jpg") repeat;
+    background:url("https://github.com/ohhaiorly/ohhaiorly.github.io.git/img/bg_main_texture.jpg") repeat;
 }
 .indexRightColumn{
     float:right;
@@ -164,7 +164,7 @@ body{
     margin-bottom:55px;
     margin-top:55px;
     min-height:100px;
-    background:url("/barbershop/img/bg_main_texture.jpg") repeat;
+    background:url("https://github.com/ohhaiorly/ohhaiorly.github.io.git/img/bg_main_texture.jpg") repeat;
 }
 .indexSectionTitle{
     font-size:30px;
@@ -232,7 +232,7 @@ body{
 }
 .galleryItem{
     position:absolute;
-    background:url("/barbershop/pict/form_image.jpg") no-repeat 0 0;
+    background:url("https://github.com/ohhaiorly/ohhaiorly.github.io.git/pict/form_image.jpg") no-repeat 0 0;
     width:286px;
     height:164px;
 }
@@ -300,7 +300,7 @@ input::-webkit-input-placeholder {
 }
 .footer{
     color:white;
-    background:url("/barbershop/img/bg_footer.jpg") repeat 0 0;
+    background:url("https://github.com/ohhaiorly/ohhaiorly.github.io.git/img/bg_footer.jpg") repeat 0 0;
     margin-top:32px;
 }
 .footer:after{
@@ -335,13 +335,13 @@ input::-webkit-input-placeholder {
     margin-right:0px;
 }
 .btnSocialVk{
-    background:url("/barbershop/img/icon_vk.png") no-repeat 0 0;
+    background:url("https://github.com/ohhaiorly/ohhaiorly.github.io.git/img/icon_vk.png") no-repeat 0 0;
 }
 .btnSocialFb{
-    background:url("/barbershop/img/icon_fb.png") no-repeat 0 0;
+    background:url("https://github.com/ohhaiorly/ohhaiorly.github.io.git/img/icon_fb.png") no-repeat 0 0;
 }
 .btnSocialInst{
-    background:url("/barbershop/img/icon_inst.png") no-repeat 0 0;
+    background:url("https://github.com/ohhaiorly/ohhaiorly.github.io.git/icon_inst.png") no-repeat 0 0;
 }
 .copyright{
     float:right;
