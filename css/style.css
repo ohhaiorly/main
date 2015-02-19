@@ -277,7 +277,7 @@ body{
     padding-left:15px;
 }
 .orderForm input:nth-child(odd){
-    margin-right:15px;
+    margin-right:19px;
 }
 input::-webkit-input-placeholder {
     color:black;
