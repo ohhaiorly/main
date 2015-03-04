@@ -221,7 +221,7 @@ body{
 .btnPrev,
 .btnNext,
 .btnSend{
-
+    font-stretch:ultra-condensed;
 }
 .galleryItems{
     position:relative;
@@ -284,6 +284,7 @@ input::-webkit-input-placeholder {
     font-weight:bold;
     text-transform: uppercase;
     font-size:14px;
+        font-stretch:ultra-condensed;
 }
 .orderForm fieldset{
     margin:0;

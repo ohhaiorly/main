@@ -2,47 +2,300 @@ html, body{
     padding:0;
     margin:0;
 }
+body{
+    font-size:16px;
+    font-family:"PT Sans Narrow", sans-serif;
+    background:url("/barbershop/img/bg_main_texture.jpg") repeat;
+}
 .layoutCenterWrapper{
-    width:700px;
+    width:940px;
     margin:0 auto;
-    min-height:50px;
-    background:green;
+}
+.layoutCenterWrapper:after{
+    content:"";
+    display:table;
+    clear:both;
 }
 .header{
-    padding:25px 0;
+    color:white;
     background:black;
+    font-weight:bold;
+}
+.header a:link,
+.header a:visited,
+.header a:hover,
+.header a:active{
+    color:white;
+}
+.topMenu{
+    float:left;
+    width:780px;
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+.accountMenu{
+    float:right;
+    max-width:140px;
+}
+.topMenu li{
+    display:inline-block;
+    margin-right:-0.2em;
+}
+.topMenu a{
+    display:block;
+    padding-top:25px;
+    padding-bottom:20px;
+    padding-left:20px;
+    padding-right:27px;
+    text-decoration:none;
+    text-transform: uppercase;
+    border-bottom:5px solid #000000;
+}
+.topMenu a:hover{
+    background:#242424;
+}
+.topMenu a:active{
+    padding-bottom:20px;
+    border-bottom:5px solid white;
+}
+.accountMenuEnter{
+    position:relative;
+    display:block;
+    padding:25px 0px;
+    padding-left:35px;
+    text-decoration:none;
+    text-transform:uppercase;
+}
+.accountMenuEnter:before{
+    content:"";
+    position:absolute;
+    width:16px;
+    height:16px;
+    background:url("/barbershop/img/icon_sign.png") no-repeat 0 0;
+    left:0;
+    top:28px;
+}
+.accountMenuEnterDisabled:before{
+    opacity:0.3;
 }
 .topEntry{
-    padding-top:40px;
-    background:#f39c12;
-    min-height:50px;
+    padding-top:54px;
+    background:none;
+    font-size:0px;
+}
+.topMainEntry{
+    font-size:30px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.topCurrentNavigation{
+    position:relative;
+    margin-top:18px;
+}
+.topCurrentNavigation:before{
+    content:"";
+    position:absolute;
+    width: 7px;
+    height: 7px;
+    background: #000000;
+    transform: rotate(45deg);
+    left:65px;
+    top:5px;
+}
+.topCurrentNavigation .topLink{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size:14px;
+    font-weight: bold;
+    color:#000000;
+    margin-right:40px;
 }
 .topContent{
-    width:300px;
-    margin:0px auto;
-    margin-top:40px;
-    min-height:50px;
-    background:#f39c12;
+    background:none;
+    margin-top:45px;
+    position:relative;
+}
+.decorativeLine{
+    display:inline-block;
+    width:160px;
+    border-bottom:2px solid #000000;
+    margin-bottom:15px;
+}
+
+.topMainTitle{
+    display:inline-block;
+    font-size:48px;
+    text-transform:uppercase;
+    font-weight:bold;
+    margin-left:29px;
+    margin-right:30px;
 }
 .indexSection{
-    margin-top:40px;
+    margin-top:53px;
 }
 .indexLeftColumn{
     float:left;
-    width:350px;
-    background:#d35400;
+    width:400px;
+    background:none;
 }
 .indexRightColumn{
     float:right;
-    width:350px;
-    background:#c0392b;
+    width:463px;
+    background:none;
+}
+.indexSectionTitle{
+    font-size:24px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.indexRightColumn .indexSectionTitle{
+    width:200px;
+}
+.indexLeftColumn .indexSectionTitle{
+    width:300px;
+}
+.indexList{
+    list-style:none;
+    padding:0;
+    margin:0;
+    margin-top:28px;
+    margin-bottom:61px;
+}
+.indexList li{
+    font-size:14px;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-left:20px;
+    position:relative;
+    margin-bottom:19px;
+}
+.indexList li:before{
+    content:"";
+    position:absolute;
+    width: 7px;
+    height: 7px;
+    background: #000000;
+    transform: rotate(45deg);
+    left:2px;
+    top:6px;
 }
 .indexSection:after {
     content:"";
     display:table;
     clear:both;
 }
+.indexLeftColumn p{
+    font-size:14px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top:27px;
+    line-height:24px;
+    margin-bottom:77px;
+}
+table{
+    width:460px;
+    height:125px;
+    cellspacing:3px;
+    font-size:14px;
+    font-weight:bold;
+    text-transform: uppercase;
+    border-collapse:collapse;
+    margin-top:32px;
+}
+.table td{
+    border:2px solid #000000;
+}
+.table td:nth-child(even){
+    text-align:center;
+    width:230px;
+}
+.table td:nth-child(odd){
+    padding-left:17px;
+    width:213px;
+}
+.indexRightColumn p{
+    font-size:14px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top:119px;
+    line-height:24px;
+    width:375px;
+}
 .footer{
-    padding:50px 0;
-    background:black;
+    color:white;
+    background:url("/barbershop/img/bg_footer.jpg") repeat 0 0;
+}
+.footer:after{
+    content:"";
+    display:table;
+    clear:both;
+}
+.footerContacts{
+    float:left;
+    margin:45px 0px 75px 0px;
+    font-size:14px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.footerContacts p{
+    margin-bottom:-8px;
+}
+.socialButtons{
+    width:147px;
+    padding-top:63px;
+    text-transform: uppercase;
+    font-size:14px;
+    position:absolute;
+    left:50%;
+    text-align:center;
+    margin-left:-75px;
+}
+.btnSocial{
+    margin:0px;
+    display:inline-block;
+    width:43px;
+    height:43px;
+    margin-top:8px;
+    background:red;
+    margin-right:6px;
+}
+.btnSocialInst{
+    margin-right:0px;
+}
+.btnSocialVk{
+    background:url("/barbershop/img/icon_vk.png") no-repeat 0 0;
+}
+.btnSocialFb{
+    background:url("/barbershop/img/icon_fb.png") no-repeat 0 0;
+}
+.btnSocialInst{
+    background:url("/barbershop/img/icon_inst.png") no-repeat 0 0;
+}
+.copyright{
+    float:right;
+    font-weight:bold;
+    text-transform: uppercase;
+    padding-top:63px;
+    text-align:center;
+    font-size:14px;
+}
+.btn{
+    display:inline-block;
+    text-align:center;
+    text-decoration: none;
+    color:#ffffff;
+    text-transform: uppercase;
+    font-weight:bold;
+    background:#000000;
+    font-size:14px;
+    border:none;
+    width:140px;
+    height:43px;
+    line-height:43px;
+    margin-top:5px;
+}
+.btn:hover{
+    background:#ffffff;
+    color:#000000;
 }
