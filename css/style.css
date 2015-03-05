@@ -17,10 +17,16 @@ body{
     font-size:14px;
     padding:0px 32px;
 }
+.top:after{
+    content:"";
+    display:table;
+    clear:both;
+}
 .top p{
     display:inline;
     color:#ababab;
     line-height:47px;
+    float:left;
 }
 .topMenu{
     display:inline;
