@@ -17,10 +17,15 @@ body{
     font-size:14px;
     padding:0px 32px;
 }
+.top:after{
+    content:"";
+    display:table;
+    clear:both;
+}
 .top p{
     display:inline;
     color:#ababab;
-    line-height:47px;
+    float:left;
 }
 .topMenu{
     display:inline;
@@ -223,15 +228,70 @@ body{
     margin-left:23px;
     margin-right:28px;
     position:relative;
+    overflow:visible;
 }
 .contentSliderItems{
-    position:relative;
+    overflow: hidden;
+    height: 231px;
 }
 .sliderItem{
     background:url("/mihstore/pict/slider_image_01.jpg") no-repeat 0 0;
     position:absolute;
     width:650px;
     height:231px;
+}
+.contentSlider ul{
+    margin:0;
+    padding:0;
+    position:relative;
+}
+.contentSlider li{
+    width: 650px;  /* Ширина изображения */
+    height: 231px; /* Высота изображения */
+    position: absolute;	/* Исходное положение  (за пределами слайдера) */
+    list-style: none;
+}
+.contentSlider li.firstanimation {
+   -webkit-animation: cycle 15s linear infinite;
+}
+
+.contentSlider li.secondanimation {
+   -webkit-animation: cycletwo 15s linear infinite;
+}
+
+.contentSlider li.thirdanimation {
+   -webkit-animation: cyclethree 15s linear infinite;
+}
+@-webkit-keyframes cycle {
+   0%  { } /* При запуске слайдера, первое изображение уже видимо */
+   6.6%  { } /* Стартовая позиция */
+   26.4% { opacity:1; z-index:0; } /* С 4% до 16 % (3 секунды) изображение видимо */
+   33% { opacity: 0; z-index: 0; } /* с 16% до 20% (1 секунды)выход изображения*/
+   34% { opacity: 0; z-index: -1; } /* Возвращение на исходную позицию за пределами маски */
+   92% { opacity: 0; z-index: 0; }
+   93.4% { opacity: 0; } /* С 96% до 100% (1 секунда) – вход */
+   100%{ opacity: 1; }
+}
+
+@-webkit-keyframes cycletwo {
+   0%  { opacity: 0; } /* Исходная позиция за пределами маски */
+   26.4% { opacity: 0; }/* Начало движения с 16% */
+   33% { opacity: 1; }
+   39.6% { opacity: 1; }  /* С 20% до 24% (в течении 1 секунды) — вход*/
+   59.4% { opacity: 1; z-index: 0; }   /* С 24% до 36 % (3 секунды) изображение видимо */
+   66% { opacity: 0; z-index: 0; } /* С 36% до 40% (1 секунда)— выход */
+   67% { opacity: 0; z-index: -1; }   /* Возврат на исходную позицию */
+   100%{ opacity: 0; z-index: -1; }
+}
+
+@-webkit-keyframes cyclethree {
+   0%  { opacity: 0; }
+   59.4% { opacity: 0; }
+   66% { opacity: 1; }
+   72.6% { opacity: 1; }
+   92.4% { opacity: 1; }
+   99% { opacity: 0; z-index: 0; }
+   100%{ opacity: 0; z-index: -1; }
 }
 .button{
     position:absolute;
