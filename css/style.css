@@ -5,7 +5,7 @@ html, body{
 body{
     font-size:16px;
     font-family:"Calibri", sans-serif;
-    background:url("/img/bg.jpg") repeat;
+    background:url("/mihstore/img/bg.jpg") repeat;
 }
 .layoutCenterWrapper{
     width:1006px;
@@ -170,7 +170,7 @@ body{
     position:absolute;
     width:18px;
     height:19px;
-    background:url("/img/icon_price.png") no-repeat 0 0;
+    background:url("/mihstore/img/icon_price.png") no-repeat 0 0;
     top:2px;
 }
 .pageDescription{
@@ -235,7 +235,7 @@ body{
     height: 231px;
 }
 .sliderItem{
-    background:url("/pict/slider_image_01.jpg") no-repeat 0 0;
+    background:url("/mihstore/pict/slider_image_01.jpg") no-repeat 0 0;
     position:absolute;
     width:650px;
     height:231px;
@@ -350,7 +350,7 @@ body{
 }
 .contentProductMain{
     position:relative;
-    background:url("/pict/content_items_01.jpg") no-repeat 0 0;
+    background:url("/mihstore/pict/content_items_01.jpg") no-repeat 0 0;
 }
 .contentImage{
     width:194px;
@@ -403,17 +403,11 @@ body{
     font-size:14px;
     background:#e8e8e8;
 }
-.contentProductFooter:after{
-    content:"";
-    display:table;
-    clear:both;
-}
 .contentName{
     display:inline-block;
     line-height:26px;
     color:#919191;
     padding-left:10px;
-    float:left;
 }
 .contentPrice{
     display:inline-block;
@@ -450,11 +444,11 @@ body{
     margin-right:4px;
 }
 .contentPagesList .pageActive{
-    background:url("/img/icon_page.png") no-repeat;
+    background:url("/mihstore/img/icon_page.png") no-repeat;
     color:#ffffff;
 }
 .contentPagesList a:hover{
-    background:url("/img/icon_page.png") no-repeat;
+    background:url("/mihstore/img/icon_page.png") no-repeat;
     color:#ffffff;
     opacity: 0.5;
 }
@@ -514,7 +508,7 @@ body{
     position:absolute;
     width:57px;
     height:55px;
-    background:url("/pict/content_bag.jpg") no-repeat;
+    background:url("/mihstore/pict/content_bag.jpg") no-repeat;
     border:1px solid #fefefe;
     top:8px;
     left:9px;
@@ -559,7 +553,7 @@ body{
     width:79px;
     height:49px;
     margin-right:7px;
-    background:url("/img/icon_pay_pp.png") no-repeat;
+    background:url("/mihstore/img/icon_pay_pp.png") no-repeat;
     margin-bottom:9px;
     opacity: 0.5;
 }
@@ -567,19 +561,19 @@ body{
     opacity: 1;
 }
 .paymentMethodVisa{
-    background:url("/img/icon_pay_visa.png") no-repeat;
+    background:url("/mihstore/img/icon_pay_visa.png") no-repeat;
 }
 .paymentMethodWc{
-    background:url("/img/icon_pay_wc.png") no-repeat;
+    background:url("/mihstore/img/icon_pay_wc.png") no-repeat;
 }
 .paymentMethodMc{
-    background:url("/img/icon_pay_mc.png") no-repeat;
+    background:url("/mihstore/img/icon_pay_mc.png") no-repeat;
 }
 .paymentMethodMs{
-    background:url("/img/icon_pay_ms.png") no-repeat;
+    background:url("/mihstore/img/icon_pay_ms.png") no-repeat;
 }
 .paymentMethodCash{
-    background:url("/img/icon_pay_cash.png") no-repeat;
+    background:url("/mihstore/img/icon_pay_cash.png") no-repeat;
 }
 .paymentMethod:nth-child(3n){
     margin-right:0px;
@@ -647,4 +641,55 @@ body{
     float:right;
     padding-top:35px;
     color:#466972;
+}
+.portfolio{
+	position:absolute;
+	width:450px;
+	height:330px;
+	background:red;
+	top:300px;
+	left:-390px;
+	border-bottom-right-radius: 15px;
+	border-top-right-radius: 15px;
+	background:#fef1ff;
+}
+.portfolio:hover{
+	left:0px;
+	-webkit-animation: slide 0.1s linear;
+}
+@-webkit-keyframes slide {
+   0%  { left:-390px; }
+   100%{ left:0px; }
+}
+.portfolio .portfolio-sidebar{
+	width:15px;
+	height:310px;
+	float:right;
+	padding:10px 25px;
+	font-size:40px;
+	font-style: italic;
+	word-break: break-all;
+	font-weight: bold;
+	line-height:35px;
+	color:#4ec6e9;
+	background:#ffdbf7;
+	border-bottom-right-radius: 15px;
+	border-top-right-radius: 15px;
+	opacity: 1;
+}
+.portfolio .port-link{
+	display:block;
+	width:355px;
+	height:165px;
+	background:#fef1ff;
+	font-size:58px;
+	text-decoration: none;
+	line-height:165px;
+	font-style: italic;
+	padding-left:30px;
+	color:aquamarine;
+}
+.portfolio .port-link:hover{
+	color:beige;
+	background-color:cadetblue;
 }
