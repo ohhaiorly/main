@@ -235,7 +235,7 @@ body{
     height: 231px;
 }
 .sliderItem{
-    background:url("/mihstore/pict/slider_image_01.jpg") no-repeat 0 0;
+    background:url("/pict/slider_image_01.jpg") no-repeat 0 0;
     position:absolute;
     width:650px;
     height:231px;
@@ -350,7 +350,7 @@ body{
 }
 .contentProductMain{
     position:relative;
-    background:url("/mihstore/pict/content_items_01.jpg") no-repeat 0 0;
+    background:url("/pict/content_items_01.jpg") no-repeat 0 0;
 }
 .contentImage{
     width:194px;
@@ -444,11 +444,11 @@ body{
     margin-right:4px;
 }
 .contentPagesList .pageActive{
-    background:url("/mihstore/img/icon_page.png") no-repeat;
+    background:url("/img/icon_page.png") no-repeat;
     color:#ffffff;
 }
 .contentPagesList a:hover{
-    background:url("/mihstore/img/icon_page.png") no-repeat;
+    background:url("/img/icon_page.png") no-repeat;
     color:#ffffff;
     opacity: 0.5;
 }
@@ -508,7 +508,7 @@ body{
     position:absolute;
     width:57px;
     height:55px;
-    background:url("/mihstore/pict/content_bag.jpg") no-repeat;
+    background:url("/pict/content_bag.jpg") no-repeat;
     border:1px solid #fefefe;
     top:8px;
     left:9px;
@@ -553,7 +553,7 @@ body{
     width:79px;
     height:49px;
     margin-right:7px;
-    background:url("/mihstore/img/icon_pay_pp.png") no-repeat;
+    background:url("/img/icon_pay_pp.png") no-repeat;
     margin-bottom:9px;
     opacity: 0.5;
 }
@@ -561,19 +561,19 @@ body{
     opacity: 1;
 }
 .paymentMethodVisa{
-    background:url("/mihstore/img/icon_pay_visa.png") no-repeat;
+    background:url("/img/icon_pay_visa.png") no-repeat;
 }
 .paymentMethodWc{
-    background:url("/mihstore/img/icon_pay_wc.png") no-repeat;
+    background:url("/img/icon_pay_wc.png") no-repeat;
 }
 .paymentMethodMc{
-    background:url("/mihstore/img/icon_pay_mc.png") no-repeat;
+    background:url("/img/icon_pay_mc.png") no-repeat;
 }
 .paymentMethodMs{
-    background:url("/mihstore/img/icon_pay_ms.png") no-repeat;
+    background:url("/img/icon_pay_ms.png") no-repeat;
 }
 .paymentMethodCash{
-    background:url("/mihstore/img/icon_pay_cash.png") no-repeat;
+    background:url("/img/icon_pay_cash.png") no-repeat;
 }
 .paymentMethod:nth-child(3n){
     margin-right:0px;
