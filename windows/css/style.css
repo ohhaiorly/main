@@ -1,0 +1,260 @@
+html, body{
+    margin:0px;
+    padding:0px;
+}
+body{
+    font-size:16px;
+    font-family: 'Noto Sans', sans-serif;
+	background:url("/windows/pict/bg.jpg");
+}
+.layout-center-wrapper{
+	width:1000px;
+	margin:0 auto;
+}
+.top-pres{
+	height:210px;
+	background:#3e5f6f;
+	position:relative;
+}
+.title-main{
+	margin:0px;
+	display:inline-block;
+	padding-top:5px;
+	Color:#fff;
+	font-style: italic;
+	font-weight: 700;
+	font-size:38px;
+}
+.title-devider{
+	width:170px;
+	position:absolute;
+	border-bottom:2px solid #fff;
+	left:210px;
+}
+.title-caption{
+	display:block;
+	color:#fff;
+	margin:0;
+	margin-top:5px;
+	font-size:16px;
+}
+.pres-logo{
+	width:150px;
+	height:150px;
+	background:url("/windows/img/logo.png") no-repeat 50px 7px;
+	float:left;
+	padding-left:50px;
+	padding-top:10px;
+	margin-right:10px;
+}
+/*
+.pres-social{
+	position:absolute;
+	list-style: none;
+	padding:0;
+	margin:0;
+	height:50px;
+	top:0;
+	right:0;
+	background:none;
+	font-size:0;
+	padding-top:10px;
+	padding-right:50px;
+}
+.pres-social li{
+	display:inline-block;
+	margin-left:10px;
+	border:none;
+}
+.social-link{
+	display:inline-block;
+	width:50px;
+	height:50px;
+}
+.social-link:hover{
+	opacity:0.7;
+}
+.social-vk{
+	background:url("/windows/img/social-vk.png") no-repeat 0 0;
+}
+.social-od{
+	background:url("/windows/img/social-od.png") no-repeat 0 0;
+}
+.social-yt{
+	background:url("/windows/img/social-yt.png") no-repeat 0 0;
+}*/
+.pres-fast-contacts{
+	position:absolute;
+	right:0;
+	top:0;
+	padding-top:10px;
+	padding-right:50px;
+	text-align: right;
+	color:#fff;
+}
+.contacts-time{
+	font-size:14px;
+}
+.contacts-phone{
+	font-size:30px;
+	color:#ffc000;
+}
+.call-button{
+	display:block;
+	width:270px;
+	height:45px;
+	text-decoration: none;
+	color:#fff;
+	text-align: center;
+	line-height: 45px;
+	font-size:20px;
+	font-weight: bold;
+	background:red;
+	background: linear-gradient(to top, #ff0107, #ff4644);
+	margin:0 auto;
+	border-radius: 3px;
+	text-shadow: 1px 1px 2px black; 
+}
+.call-button:hover{
+	box-shadow:inset
+ 0px 0px 5px 1px #000;
+}
+.call-button-decor{
+	width:280px;
+	height:50px;
+	background: linear-gradient(to top, #385364, #2b3e4c);
+	padding-top:5px;
+	border-radius: 5px;
+	margin-top:5px;
+}
+.top-medals{
+	height:80px;
+	background:none;
+	margin-left:210px;
+	font-size:0;
+	margin-top:5px;
+}
+.medal{
+	display:inline-block;
+	vertical-align: top;
+	margin-right:50px;
+	width:160px;
+	position:relative;
+}
+.medal-img{
+	width:65px;
+	float:left;
+}
+.medal-caption{
+	display:inline-block;
+	font-size:14px;
+	color:#fff;
+	margin:0;
+	position:absolute;
+	left:70px
+}
+.medal-caption-left{
+	position:absolute;
+	top:50%;
+	height:30%;
+	margin:-15% 0 0 0;
+}
+.medal-caption-right{
+	position:absolute;
+	top:50%;
+	height:40%;
+	margin:-18% 0 0 0;
+}
+.top-nav{
+	height:45px;
+	width:100%;
+	background:#293d47;
+	position:absolute;
+	bottom:0px;
+	text-align: center;
+}
+.top-nav-decor{
+	position:absolute;
+	width:100%;
+	bottom:45px;
+	height:3px;
+	background:#3e5f6f;
+	background: linear-gradient(to top, #293d47, #3e5f6f);
+}
+.navigation{
+	list-style: none;
+	padding:0;
+	margin:0;
+	font-size:0px;
+}
+.navigation li{
+	display:inline-block;
+	margin:0;
+	padding:0;
+	padding-top:5px;
+}
+.nav-link{
+	display:inline-block;
+	font-size:16px;
+	color:#c7ddeb;
+	text-decoration: none;
+	padding:3px 5px;
+	margin:0 10px;
+	border:2px solid #293d47;
+	border-radius:15px;
+}
+.nav-link:hover{
+	border:2px solid #4a6473;
+}
+.top-carousel{
+	height:500px;
+	background:red;
+	position:relative;
+}
+.top-slides{
+	height:500px;
+	background:green;
+	overflow: hidden;
+	position:relative;
+}
+.top-controls{
+	height:100px;
+	font-size:0px;
+	position:absolute;
+	width:300px;
+	top:0;
+	right:0;
+}
+.top-control{
+	display:inline-block;
+	height:60px;
+	width:300px;
+	background:#fff;
+	font-size:14px;
+	text-decoration: none;
+	color:#000;
+}
+.top-slide{
+	position:absolute;
+	top:0;
+	left:0;
+	width:1000px;
+	height:500px;
+	display:block;
+	border:none;
+}
+.top-slide-2{
+	display:none;
+}
+.top-slide-3{
+	display:none;
+}
+.top-slide-4{
+	display:none;
+}
+.slide-invisible{
+	display:none;
+}
+.slide-visible{
+	display:block;
+}
