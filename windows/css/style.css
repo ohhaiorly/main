@@ -165,6 +165,9 @@ body{
 	height:40%;
 	margin:-18% 0 0 0;
 }
+.top-stand-out{
+	color:#ffc000;
+}
 .top-nav{
 	height:45px;
 	width:100%;
@@ -208,12 +211,13 @@ body{
 }
 .top-carousel{
 	height:500px;
-	background:red;
+	background:#3FFCCCC;
 	position:relative;
+	border-bottom:4px solid #293d47;
 }
 .top-slides{
 	height:500px;
-	width:700px;
+	width:690px;
 	background:green;
 	overflow: hidden;
 	position:relative;
@@ -225,36 +229,101 @@ body{
 .top-slides-bg{
 	position:absolute;
 	height:500px;
-	width:700px;
+	width:705px;
 	-webkit-border-radius:0px 5em 25em 0px;
 	-moz-border-radius:0px 5em 25em 0px;
 	border-radius:0px 0em 25em 0px;
 	top:0;
-	left:15px;
+	left:0px;
 	z-index: 2;
 	background:#293d47;
 }
-.top-controls{
-	height:500px;
-	font-size:0px;
-	position:absolute;
-	width:700px;
-	top:0;
-	right:0;
-	z-index: 1;
-}
 .top-control{
 	display:inline-block;
-	height:120px;
-	width:650px;
-	background:#fff;
-	font-size:14px;
+	height:96px;
+	background:none;
 	text-decoration: none;
 	color:#000;
 	text-align: right;
 	padding-right: 50px;
-	padding-top:5px;
-	font-size:26px;
+	font-size:22px;
+	position:absolute;
+	border-bottom:4px solid #293d47;
+	color:#3e5f6f;
+	font-weight: bold;
+	
+}
+.top-slide-spinner{
+	position:absolute;
+	display:none;
+	width:35px;
+	height:35px;
+	top:31px;
+	right:7px;
+	background: url(/windows/img/icon-hover-slide.png) no-repeat 0 0;
+	-webkit-animation-name: spin;
+    -webkit-animation-duration: 2000ms;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: spin;
+    -moz-animation-duration: 2000ms;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -ms-animation-name: spin;
+    -ms-animation-duration: 2000ms;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: linear;
+    
+    animation-name: spin;
+    animation-duration: 2000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.top-control:hover:after{
+	content:"";
+	position:absolute;
+	width:35px;
+	height:35px;
+	background: url(/windows/img/icon-hover-slide.png) no-repeat 0 0;
+	top:31px;
+	right:7px;
+	-webkit-animation-name: spin;
+    -webkit-animation-duration: 2000ms;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: spin;
+    -moz-animation-duration: 2000ms;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -ms-animation-name: spin;
+    -ms-animation-duration: 2000ms;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: linear;
+    
+    animation-name: spin;
+    animation-duration: 2000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@-ms-keyframes spin {
+    from { -ms-transform: rotate(0deg); }
+    to { -ms-transform: rotate(360deg); }
+}
+@-moz-keyframes spin {
+    from { -moz-transform: rotate(0deg); }
+    to { -moz-transform: rotate(360deg); }
+}
+@-webkit-keyframes spin {
+    from { -webkit-transform: rotate(0deg); }
+    to { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
 }
 .top-slide{
 	position:absolute;
@@ -266,20 +335,40 @@ body{
 	z-index: 3;
 }
 .top-control-1{
-	width:200px;
-	padding-left:450px;
+	width:230px;
+	padding-left:20px;
+	top:0;
+	right:0;
+	z-index:4;
 }
 .top-control-2{
-	width:200px;
-	padding-left:450px;
+	width:230px;
+	padding-left:40px;
+	top:100px;
+	right:0;
+	z-index:4;
 }
 .top-control-3{
-	width:260px;
-	padding-left:390px;
+	width:240px;
+	padding-left:60px;
+	top:200px;
+	right:0;
+	z-index:4;
 }
 .top-control-4{
-	width:340px;
+	width:290px;
+	padding-left:100px;
+	top:300px;
+	right:0;
+	z-index:4;
+}
+.top-control-5{
+	width:320px;
 	padding-left:310px;
+	top:400px;
+	right:0;
+	z-index:4;
+	height:100px;
 }
 .top-slide-2{
 	display:none;
@@ -288,6 +377,9 @@ body{
 	display:none;
 }
 .top-slide-4{
+	display:none;
+}
+.top-slide-5{
 	display:none;
 }
 .slide-invisible{
