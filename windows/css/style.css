@@ -340,6 +340,7 @@ body{
 	top:0;
 	right:0;
 	z-index:4;
+	line-height:43px;
 }
 .top-control-2{
 	width:230px;
@@ -347,6 +348,7 @@ body{
 	top:100px;
 	right:0;
 	z-index:4;
+	line-height:43px;
 }
 .top-control-3{
 	width:240px;
@@ -354,6 +356,7 @@ body{
 	top:200px;
 	right:0;
 	z-index:4;
+	line-height:43px;
 }
 .top-control-4{
 	width:290px;
@@ -361,6 +364,7 @@ body{
 	top:300px;
 	right:0;
 	z-index:4;
+	line-height:43px;
 }
 .top-control-5{
 	width:320px;
@@ -369,6 +373,7 @@ body{
 	right:0;
 	z-index:4;
 	height:100px;
+	line-height:32px;
 }
 .top-slide-2{
 	display:none;
@@ -387,4 +392,67 @@ body{
 }
 .slide-visible{
 	display:block;
+}
+.mid-carousel{
+	background:red;
+	height:185px;
+	width:1000px;
+	position:relative;
+	padding-top:15px;
+}
+.mid-slides{
+	width:900px;
+	background:green;
+	height:170px;
+	margin:0 auto;
+	font-size:0px;
+	position:relative;
+	overflow: hidden;
+}
+.mid-slide{
+	display:inline-block;
+	font-size:20px;
+	width:300px;
+	height:170px;
+	background:url("/windows/pict/rick-astley.jpg") no-repeat;
+	position:absolute;
+}
+.mid-control{
+	width:50px;
+	height:50px;
+	background:blue;
+	position: absolute;
+	top:77px;
+}
+.mid-left-control{
+}
+.mid-right-control{
+	right:0;
+}
+.mid-slide-1{
+	background-color:chartreuse;
+	z-index: 5
+}
+.mid-slide-2{
+	left:300px;
+}
+.mid-slide-3{
+	left:600px;
+}
+.mid-slide-4{
+	left:900px;
+}
+.mid-slide-5{
+	left:-300px;
+}
+.about{
+	height:100px;
+	background:green;
+	position:relative;
+}
+.test-block{
+	background:yellow;
+	width:50px;
+	height:50px;
+	position:absolute;
 }
