@@ -45,7 +45,7 @@ clearInterval(intervalID);
 	});
 */	var click_left = 0;
 	var click_right = 0;
-	var intervalId = setInterval(function(){slide()}, 3000);
+	var intervalId = setInterval(function(){slide()}, 4000);
 	function slide() {
 		if (click_left == 0 && click_right == 0) {
 		$('.mid-slide').animate({left:'-=300px'}, 500, function() {
@@ -77,7 +77,7 @@ clearInterval(intervalID);
 	$('.mid-carousel').hover(function() {
 		clearInterval(intervalId);
 	},function() {
-		intervalId = setInterval(function(){slide()}, 3000);
+		intervalId = setInterval(function(){slide()}, 4000);
 	});
 	$('.mid-left-control').click(function(c){
 		c.preventDefault();

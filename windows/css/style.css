@@ -211,7 +211,7 @@ body{
 }
 .top-carousel{
 	height:500px;
-	background:#3FFCCCC;
+	background:none;
 	position:relative;
 	border-bottom:4px solid #293d47;
 }
@@ -394,16 +394,16 @@ body{
 	display:block;
 }
 .mid-carousel{
-	background:red;
-	height:185px;
+	background:url("/windows/pict/bg2.png");
+	height:210px;
 	width:1000px;
 	position:relative;
 	padding-top:15px;
 }
 .mid-slides{
 	width:900px;
-	background:green;
-	height:170px;
+	background:none;
+	height:195px;
 	margin:0 auto;
 	font-size:0px;
 	position:relative;
@@ -412,21 +412,43 @@ body{
 .mid-slide{
 	display:inline-block;
 	font-size:20px;
-	width:300px;
-	height:170px;
-	background:url("/windows/pict/rick-astley.jpg") no-repeat;
+	width:290px;
+	height:185px;
+	background:green;
 	position:absolute;
+	padding:5px;
+}
+.mid-slide-inner{
+	width:100%;
+	height:100%;
+}
+.mid-slide:hover{
+	opacity: 0.5;
 }
 .mid-control{
 	width:50px;
-	height:50px;
-	background:blue;
+	height:225px;
+	top:0px;
 	position: absolute;
-	top:77px;
 }
-.mid-left-control{
+.mid-left-control{		background:url("/windows/img/icon-control-left.png") no-repeat 0px 85px;
+}
+.mid-right-control:hover{
+	box-shadow:7px 0px 10px 0px #293d47;
+}
+.mid-left-control:active{
+	background:url("/windows/img/icon-control-left-active.png") no-repeat 0px 85px;
+}
+
+.mid-left-control:hover{
+	box-shadow:-7px 0px 10px 0px #293d47;
 }
 .mid-right-control{
+	background:url("/windows/img/icon-control-right.png") no-repeat 0px 85px;
+	right:0;
+}
+.mid-right-control:active{
+	background:url("/windows/img/icon-control-right-active.png") no-repeat 0px 85px;
 	right:0;
 }
 .mid-slide-1{
