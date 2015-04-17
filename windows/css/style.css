@@ -351,16 +351,16 @@ body{
 	line-height:43px;
 }
 .top-control-3{
-	width:240px;
-	padding-left:60px;
+	width:270px;
+	padding-left:30px;
 	top:200px;
 	right:0;
 	z-index:4;
 	line-height:43px;
 }
 .top-control-4{
-	width:290px;
-	padding-left:100px;
+	width:310px;
+	padding-left:80px;
 	top:300px;
 	right:0;
 	z-index:4;
@@ -414,7 +414,7 @@ body{
 	font-size:20px;
 	width:290px;
 	height:185px;
-	background:green;
+	background:none;
 	position:absolute;
 	padding:5px;
 }
@@ -452,7 +452,6 @@ body{
 	right:0;
 }
 .mid-slide-1{
-	background-color:chartreuse;
 	z-index: 5
 }
 .mid-slide-2{
@@ -468,13 +467,135 @@ body{
 	left:-300px;
 }
 .about{
-	height:100px;
-	background:green;
+	height:650px;
+	background:#293d47;
 	position:relative;
+	color:#fff;
 }
-.test-block{
-	background:yellow;
-	width:50px;
-	height:50px;
-	position:absolute;
+.about-title{
+	margin:0;
+	padding:0;
+	padding-top:10px;
+	text-align: center;
+	color:#ffc000;
+	font-size:45px;
+	text-transform: uppercase;
+}
+.about-subtitle{
+	margin:0;
+	padding:0;
+	text-align: center;
+	font-size: 35px;
+}
+.about-main{
+	margin:30px 50px 30px 50px;
+}
+.about-team-outer{
+	width:330px;
+	height:230px;
+	overflow: hidden;
+	float:left;
+	margin-right: 25px;
+	margin-bottom: 15px;
+	
+}
+.about-main-title{
+	margin:0;
+	margin-bottom:10px;
+	font-size: 25px;
+	
+}
+.about-main-caption{
+	margin:0;
+	margin-bottom:25px;
+}
+.about-main-list{
+	list-style: none;
+	padding: 0;
+	margin:0;
+}
+.discount{
+	background:none;
+	font-size:0px;
+}
+.discount:after{
+	content:"";
+	display: table;
+	clear:both;
+}
+.discount-comments{
+	width:283px;
+	height:500px;
+	background:red;
+	float:right;
+	padding-right:50px;
+	font-kerning:20px;
+}
+.discount-items{
+	float:left;
+	width:616px;
+	vertical-align: top;
+	background:none;
+	height:500px;
+	padding-left:50px;
+}
+.discount-title{
+	margin:0;
+	padding-top:10px;
+	text-align: center;
+	color:#ffc000;
+	font-size:45px;
+	text-transform: uppercase;
+}
+.discount-item{
+	width:288px;
+	margin-right:10px;
+	background:none;
+	display:inline-block;
+	font-size:20px;
+	height:390px;
+	vertical-align: top;
+	position: relative;
+	border:5px solid #ffc000;
+}
+.discount-item:hover{
+	border:5px solid #d21300;
+}
+.discount-item-image{
+
+}
+.discount-item-outer{
+	width:288px;
+	height:200px;
+	overflow: hidden;
+}
+.discount-item-title{
+	margin:0;
+	text-align: center;
+	padding-top:5px;
+	font-size: 22px;
+}
+.discount-item-caption{
+	margin:0;
+	font-size:18px;
+	text-align: center;
+	padding-top:5px;
+}
+.discount-item-button{
+	text-decoration: none;
+	position:Absolute;
+	width:180px;
+	height:40px;
+	line-height: 40px;
+	text-align: center;
+	left:0;
+	right:0;
+	bottom:10px;
+	margin:auto;
+	color:#fff;
+	background:#d21300;
+}
+.discount-item-button:hover{
+	background:#fff;
+	color:#d21300;
 }
