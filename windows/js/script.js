@@ -109,6 +109,11 @@ clearInterval(intervalID);
 	});
 	}
 });
+	$('.discount-item').hover(function() {
+		$(this).find('.discount-item-outer').css('border-color','#d21300');
+	}, function() {
+		$(this).find('.discount-item-outer').css('border-color','#ffc000')
+	});
 });
 /*
 best variant
