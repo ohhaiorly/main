@@ -114,8 +114,57 @@ clearInterval(intervalID);
 	}, function() {
 		$(this).find('.discount-item-outer').css('border-color','#ffc000')
 	});
+	$('.navigation a').click( function(){
+	    var scroll_el = $(this).attr('href'); 
+        if ($(scroll_el).length != 0) {
+	    $('html, body').animate({ scrollTop: $(scroll_el).offset().top }, 900);
+        }
+	    return false;
+    });
+	//Кнопка возвращения наверх
+	var visible_control = 720;
+	   $(window).scroll(function(){
+		if ($(document).scrollTop() >= visible_control) {
+			$('.back-control').fadeIn();
+		}
+		else {
+			$('.back-control').fadeOut();
+		};
+	});
+		$('.back-control').mouseover( function(){
+		$(this).animate({opacity: 1}, 100);
+	}).mouseout( function(){
+		$(this).animate({opacity: 0.65}, 100);
+	}).click( function(){
+		$('html, body').animate({ scrollTop: 0 }, 500);
+		return false;
+	});
+	//Галерея
+	$('.gallery-item').hover(function() {
+		$(this).css('opacity','0.5');
+	}, function() {
+		$(this).css('opacity','1');
+	});
+	$('.gallery-item').click(function() {
+    	$('.gallery-view').addClass('display-gallery');
+		$('.gallery-view').focus();
+  	});
+	$('.gallery-view').blur(function() {
+  	$('.gallery-view').removeClass('display-gallery');
+});
 });
 /*
+$(document).ready(function() {
+    $(document).on('click',function(e){
+        e.stopPropagation();
+        if (e.target.className == 'hui') {
+            $('.zalupa').addClass('display-zalupa');
+            } else {
+            $('.zalupa').removeClass('display-zalupa');
+            
+        }      
+    })
+});
 best variant
 ______________
 var click_left = 0;
