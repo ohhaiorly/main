@@ -647,9 +647,9 @@ body{
 	text-align: center;
 	color:#ffc000;
 }
-.gallery-view{
-	width:50%;
-	height:50%;
+.gallery-view-outer{
+	width:1000px;
+	height:400px;
 	position:fixed;
 	top:0;
 	right:0;
@@ -657,11 +657,53 @@ body{
 	left:0;
 	margin:auto;
 	z-index: 1000;
-	background:red;
+	background:#3e5f6f;
 	display:none;
+	text-align: center;
 }
+/*.gallery-slides{
+	display:none;
+}*/
 .display-gallery{
 	display:block;
+}
+.gallery-control{
+	width:100px;
+	height:100%;
+	background:none;
+	position:absolute;
+	top:0;
+	cursor: pointer;
+}
+.gallery-left{
+	background:url("/windows/img/icon-control-left.png") no-repeat 0 50%;
+}
+.gallery-right{
+	background:url("/windows/img/icon-control-right.png") no-repeat 100% 50%;
+}
+.gallery-left:hover{
+	box-shadow:-8px 0px 10px 0px #293d47;
+}
+.gallery-right:hover{
+	box-shadow:8px 0px 10px 0px #293d47;
+}
+.gallery-left:active{
+		background:url("/windows/img/icon-control-left-active.png") no-repeat 0 50%;
+}
+.gallery-right:active{
+	background:url("/windows/img/icon-control-right-active.png") no-repeat 100% 50%;
+}
+.gallery-left{
+	left:0;
+}
+.gallery-right{
+	right:0;
+}
+.gallery-view-inner{
+	background:none;
+}
+.gallery-img{
+	max-width:800px;
 }
 .reasons{
 	height:550px;
@@ -840,6 +882,27 @@ body{
 }
 .footer-year:hover{
 	color:#ffc000;
+}
+.footer-logo{
+	width:150px;
+	height:150px;
+	text-decoration: none;
+	position:absolute;
+	left:0;
+	right:0;
+	margin:25px auto;
+}
+.footer-logo-img{
+	width:150px;
+	height:150px;
+		background:url("/windows/img/logo.png") no-repeat;
+}
+.footer-logo-title{
+	color:#ffc000;
+	text-align: center;
+	text-transform: uppercase;
+	margin-top:5px;
+	font-size: 21px;
 }
 .back-control{
 	position:fixed;
