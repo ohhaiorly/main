@@ -748,9 +748,9 @@ body{
 }
 .portfolio .portfolio-sidebar{
 	width:15px;
-	height:310px;
+	height:395px;
 	float:right;
-	padding:10px 25px;
+	padding:90px 25px 10px 25px;
 	font-size:40px;
 	font-style: italic;
 	word-break: break-all;
@@ -773,8 +773,14 @@ body{
 	font-style: italic;
 	padding-left:30px;
 	color:aquamarine;
+	position: relative;
 }
 .portfolio .port-link:hover{
 	color:beige;
 	background-color:cadetblue;
+}
+.port-caption{
+	font-size:14px;
+	position: absolute;
+	bottom: -70px;
 }
