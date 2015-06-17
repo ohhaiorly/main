@@ -784,3 +784,47 @@ body{
 	position: absolute;
 	bottom: -70px;
 }
+.myblog{
+	position:absolute;
+	width:450px;
+	height:165px;
+	background:red;
+	top:795px;
+	left:-390px;
+	border-bottom-right-radius: 15px;
+	border-top-right-radius: 15px;
+	background:#66FFFF ;
+}
+.myblog:hover{
+	left:0px;
+	-webkit-animation: slide 0.1s linear;
+}
+.myblog__sidebar {
+	float:right;
+	background:#000;
+	color:#fff;
+	height:162px;
+	border-bottom-right-radius: 15px;
+	border-top-right-radius: 15px;
+	font-size:26px;
+	line-height:22px;
+	padding:0 20px;
+	padding-top:3px;
+	width:25px;
+	text-align: center;
+	word-wrap: break-word;
+}
+.myblog__title {
+	float:left;
+	width:385px;
+	height:165px;
+	text-decoration: none;
+	color:#fff;
+	font-size:50px;
+	line-height: 165px;
+	text-align: center;
+	text-transform: uppercase;
+}
+.myblog__title:hover {
+	background:#9999CC;
+}
